@@ -1,0 +1,18 @@
+.titulologo{
+  border: 10px black;
+  border-radius: 10px;
+}
+#imagenlogo{
+
+}
+h1{
+    text-align: center;
+    
+}
+body{
+    background-color: skyblue;
+}
+#imagenPela{
+  width: 300px;
+  height: 200px;
+}
