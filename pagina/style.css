@@ -1,18 +1,73 @@
-.titulologo{
-  border: 10px black;
-  border-radius: 10px;
-}
-#imagenlogo{
 
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    margin: 0; /* Quita los márgenes blancos alrededor */
 }
-h1{
-    text-align: center;
-    
+
+/* Contenedor del logo y menú */
+.titulologo {
+    display: flex; /* Pone elementos en línea horizontal */
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px; /* Espacio interno */
+    margin:20px;/*Espacio Externo*/
+    border-radius: 20px;/*radio del borde del div titulologo*/
+    background-color: white; /* Fondo blanco */
+    border-bottom: 2px solid #ccc; /* Línea gris abajo */
 }
-body{
-    background-color: skyblue;
+
+/* Estilo para la imagen del logo */
+#imagenlogo {
+    height: 60px; /* Altura del logo */
+    width: auto; /* Ancho automático (no se deforma) */
 }
-#imagenPela{
-  width: 300px;
-  height: 200px;
+
+/* Estilo para el botón del menú */
+.navbar button {
+    background-color:skyblue; /* Color verde */
+    color: white; /* Letra blanca */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espacio interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Manito al pasar el mouse */
+    font-size: 18px; /* Tamaño de letra */
+}
+
+/* Cuando pasas el mouse sobre el botón */
+.navbar button:hover {
+    background-color: skyblue; /* Verde más oscuro */
+}
+
+/* Estilo para la lista del menú */
+#menu {
+    position: absolute; /* Para que flote sobre la página */
+    right: 20px; /* A 20px del borde derecho */
+    top: 80px; /* A 80px del borde superior */
+    background: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px; /* Espacio interno */
+    list-style: none; /* Quita los puntitos de la lista */
+}
+
+/* Estilo para cada opción del menú */
+#menu li {
+    padding: 8px 12px; /* Espacio interno */
+    cursor: pointer; /* Manito al pasar el mouse */
+}
+
+/* Cuando pasas el mouse sobre las opciones */
+#menu li:hover {
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+/* Estilo para la imagen grande de la chica */
+#imagenPela {
+    width: 80%; /* Ocupa el 80% del ancho */
+    max-width: 500px; /* Pero máximo 500px */
+    display: block; /* Hace que se comporte como bloque */
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 10px; /* Esquinas redondeadas */
 }
