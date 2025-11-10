@@ -16,6 +16,7 @@ body {
     border-radius: 20px;/*radio del borde del div titulologo*/
     background-color: white; /* Fondo blanco */
     border-bottom: 2px solid #ccc; /* Línea gris abajo */
+
 }
 
 /* Estilo para la imagen del logo */
@@ -71,3 +72,11 @@ body {
     margin: 20px auto; /* Centra la imagen */
     border-radius: 10px; /* Esquinas redondeadas */
 }
+
+/*CSS ESPECIALMENTE PARA EL CARRITO.HTML*/
+.Prox{
+    text-align: center;
+}
+
+
+/*CSS ESPECIALMENTE PARA EL CONTACTO.HTML*/
