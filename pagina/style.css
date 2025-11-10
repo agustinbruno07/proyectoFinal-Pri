@@ -1,33 +1,70 @@
 
-/* Estilo para el cuerpo de la página */
+/* Estilo para el cuerpo de la pagina */
 body {
     background-color: #f0f0f0; /* Color de fondo gris claro */
     font-family: Arial, sans-serif; /* Tipo de letra */
-    margin: 0; /* Quita los márgenes blancos alrededor */
+    margin: 0; /* Quita los margenes blancos alrededor */
 }
 
-/* Contenedor del logo y menú */
+/* Contenedor del logo y menu */
 .titulologo {
-    display: flex; /* Pone elementos en línea horizontal */
+    display: flex; /* Pone elementos en linea horizontal */
     justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
     align-items: center; /* Centra verticalmente */
     padding: 20px; /* Espacio interno */
     margin:20px;/*Espacio Externo*/
     border-radius: 20px;/*radio del borde del div titulologo*/
     background-color: white; /* Fondo blanco */
-    border-bottom: 2px solid #ccc; /* Línea gris abajo */
+    border-bottom: 2px solid #ccc; /* Linea gris abajo */
 
 }
+/*Presentacion en Home*/
+.Presentacion {
+    display: flex;   /* Pone imagen y texto en linea */
+    align-items: center;  /* Centra verticalmente */
+    gap: 10px;  /* Espacio entre imagen y texto */
+    margin: 30px 30px; /* Margen alrededor de todo */
+    font-size: 20px;
+}
+.textoPresentacion p {
+    display: block;     /* Cada parrafo ocupa toda la linea (uno abajo del otro) */
+    margin-bottom: 15px;  /* Espacio de 15px entre cada parrafo */
+    border: 5px solid rgb(79, 125, 133); /* Borde azul de 5px alrededor de cada parrafo */
+    border-radius: 10px;  /* Esquinas redondeadas del borde */
+    line-height: 1.6;   /* Espacio entre lineas de texto (mejor legibilidad) */
+    padding: 10px;      /* Espacio interno entre el texto y el borde */
+}
+.textoPresentacion {
+    flex: 1;  /* El texto ocupa el espacio restante */
+}
+
+.finalHome {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.footer {
+    text-align: center;/*Para que el texto este centrado a la pantalla*/
+    font-size: 20px;/*Tamaño del texto*/
+    margin-top:100px;/*El espacio exterior de arriba */
+    border: 1px solid black;/*El borde del elemento*/
+    background-color: rgb(79, 125, 133);
+}
+.footer p{  
+    font-family: Georgia, 'Times New Roman', Times, serif;/*fuente para todo el texto del footer*/
+}
+
 
 /* Estilo para la imagen del logo */
 #imagenlogo {
-    height: 60px; /* Altura del logo */
-    width: auto; /* Ancho automático (no se deforma) */
+    height: 100px; /* Altura del logo */
+    width: auto; /* Ancho automatico (no se deforma) */
 }
 
-/* Estilo para el botón del menú */
+/* Estilo para el boton del meno */
 .navbar button {
-    background-color:skyblue; /* Color verde */
+    background-color:rgb(79, 125, 133); /* Color verde */
     color: white; /* Letra blanca */
     border: none; /* Sin borde */
     padding: 10px 15px; /* Espacio interno */
@@ -36,14 +73,14 @@ body {
     font-size: 18px; /* Tamaño de letra */
 }
 
-/* Cuando pasas el mouse sobre el botón */
+/* Cuando pasas el mouse sobre el boton */
 .navbar button:hover {
-    background-color: skyblue; /* Verde más oscuro */
+    background-color: rgb(79, 125, 133); /* celeste mas oscuro */
 }
 
-/* Estilo para la lista del menú */
+/* Estilo para la lista del menu */
 #menu {
-    position: absolute; /* Para que flote sobre la página */
+    position: absolute; /* Para que flote sobre la pagina */
     right: 20px; /* A 20px del borde derecho */
     top: 80px; /* A 80px del borde superior */
     background: white; /* Fondo blanco */
@@ -53,11 +90,12 @@ body {
     list-style: none; /* Quita los puntitos de la lista */
 }
 
-/* Estilo para cada opción del menú */
+/* Estilo para cada opcion del menu */
 #menu li {
     padding: 8px 12px; /* Espacio interno */
-    cursor: pointer; /* Manito al pasar el mouse */
+    cursor: pointer; /* se pone la manito al pasar el mouse */
 }
+
 
 /* Cuando pasas el mouse sobre las opciones */
 #menu li:hover {
@@ -65,18 +103,188 @@ body {
 }
 
 /* Estilo para la imagen grande de la chica */
-#imagenPela {
+#imagenAgua{
     width: 80%; /* Ocupa el 80% del ancho */
-    max-width: 500px; /* Pero máximo 500px */
+    max-width: 500px; /* Pero maximo 500px */
     display: block; /* Hace que se comporte como bloque */
     margin: 20px auto; /* Centra la imagen */
     border-radius: 10px; /* Esquinas redondeadas */
 }
 
-/*CSS ESPECIALMENTE PARA EL CARRITO.HTML*/
-.Prox{
-    text-align: center;
+
+
+/*CSS ESPECIALMENTE PARA ABOUT*/
+.textoAbout{
+    display: flex;
+    border:4px solid gray;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-left:20px ;
+    margin-right: 20px;
+
+}
+.textoAbout p{
+    font-size: 25px;
+}
+.formulario{
+    
+    border: 10px solid rgb(79, 125, 133);
+    border-radius: 40px;
+    display:flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    margin-top: 30px;   
+    margin-right: 800px;
+    margin-left: 10px;
+   
 }
 
+.formulario textarea{
+    resize: none;/*Para que no se pueda agrandar ni achicar el mensaje*/
+}
 
-/*CSS ESPECIALMENTE PARA EL CONTACTO.HTML*/
+.formulario h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/*La fuente del h1*/
+    font-size:30px;/*El tamaño del texto*/
+}
+/*CSS ESPECIALMENTE PARA INFO.HTML*/
+.info{
+ font-size: 25px;  
+ border: 10px solid gray;
+ border-radius: 50px;
+ margin-right: 20px;
+ margin-left: 20px;
+ padding: 10px 10px 10px 10px;
+}
+/*PARA EL DISEÑO RESPONSIVE*/
+
+/* CSS PARA CARRITO */
+#imagenPastilla{
+    width: 80%; /* Ocupa el 80% del ancho */
+    max-width: 500px; /* Pero maximo 500px */
+    display: block; /* Hace que se comporte como bloque */
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.prox{
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+
+    /* Home  */
+    .Presentacion {
+        flex-direction: column; /* Coloca imagen y texto uno debajo del otro */
+        text-align: center;
+    }
+    #imagenAgua {
+        width: 80%; /* Más ancha en tablet */
+        max-width: 400px; /* Límite para que no sea enorme */
+        margin: 0 auto 20px auto; /* Centra y añade margen inferior */
+    }
+    .textoPresentacion p {
+        font-size: 16px;
+    }
+
+    /* About  */
+    .contenedor-principal {
+        flex-direction: column; /* Coloca texto y formulario uno debajo del otro */
+        align-items: center;
+    }
+
+    .formulario {
+        max-width: 600px; /* Permite que el formulario sea más ancho */
+        margin-top: 20px;
+        width: 90%;
+    }
+}
+
+/*  Celular (max-width: 768px)  */
+@media (max-width: 768px) {
+    
+    .titulologo {
+        flex-direction: column; /* Coloca logo, título y menú en columna */
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulologo h1 {
+        font-size: 20px; /* Tamaño de título más pequeño */
+        margin: 10px 0;
+    }
+
+    /* Ajustar la posición del menú para que no flote tan arriba */
+    #menu {
+        top: 180px; /* Baja la posición del menú para que esté debajo de h1 */
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%); /* Centra el menú */
+        width: 80%;
+    }
+    
+    /* Home  */
+    .Presentacion {
+        margin: 20px 10px; /* Menos margen lateral */
+    }
+    #imagenAgua {
+        width: 90%;
+        max-width: 300px;
+    }
+    .textoPresentacion p {
+        border-width: 3px; /* Borde más fino */
+        padding: 8px;
+    }
+    .finalHome {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    /* About  */
+    .textoAbout p {
+        font-size: 18px;
+    }
+    .formulario {
+        width: 100%; /* Que ocupe todo el ancho disponible */
+        margin: 20px 0;
+    }
+
+    /* Info */
+    .info {
+        font-size: 18px;
+        border-width: 5px;
+        border-radius: 20px;
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 14px;
+        padding: 15px 5px;
+        margin-top: 30px;
+    }
+}
+
+/* Ocultar el botón del menú en PC/Tablet cuando el ancho es suficiente */
+@media (min-width: 769px) {
+    .navbar button {
+        display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+    }
+    #menu {
+        position: static; /* El menú vuelve a su flujo normal */
+        display: flex !important; /* Muestra el menú de forma horizontal */
+        background: none;
+        border: none;
+        padding: 0;
+        margin-left: 20px; /* Espacio para separarlo del título */
+    }
+    #menu li {
+        padding: 0 10px;
+    }
+    #menu li:hover {
+        background: none;
+        text-decoration: underline;
+    }
+}
