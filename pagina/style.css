@@ -3,10 +3,10 @@
 body {
     background-color: #f0f0f0; /* Color de fondo gris claro */
     font-family: Arial, sans-serif; /* Tipo de letra */
-    margin: 0; /* Quita los margenes blancos alrededor */
+    margin: 0; /* Saca los margenes blancos alrededor */
 }
 
-/* Contenedor del logo y menu */
+/* div del logo y menu */
 .titulologo {
     display: flex; /* Pone elementos en linea horizontal */
     justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
@@ -39,9 +39,9 @@ body {
 }
 
 .finalHome {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 80px;
+    text-align: center;/*Centra el texto*/
+    font-size: 25px;/*Tamaño del texto*/
+    margin-top: 80px;/*Separacion exterior de arriba */
 }
 
 .footer {
@@ -59,7 +59,7 @@ body {
 /* Estilo para la imagen del logo */
 #imagenlogo {
     height: 100px; /* Altura del logo */
-    width: auto; /* Ancho automatico (no se deforma) */
+    width: auto; /* Ancho automatico  */
 }
 
 /* Estilo para el boton del meno */
@@ -87,7 +87,7 @@ body {
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 5px; /* Esquinas redondeadas */
     padding: 10px; /* Espacio interno */
-    list-style: none; /* Quita los puntitos de la lista */
+    list-style: none; /* Saca los puntitos de la lista */
 }
 
 /* Estilo para cada opcion del menu */
@@ -115,27 +115,27 @@ body {
 
 /*CSS ESPECIALMENTE PARA ABOUT*/
 .textoAbout{
-    display: flex;
-    border:4px solid gray;
-    border-radius: 20px;
-    padding: 10px 10px 10px 10px;
-    margin-left:20px ;
-    margin-right: 20px;
+    display: flex;/**/
+    border:4px solid gray;/*Borde del texto*/
+    border-radius: 20px;/*Que tan redondeado esta */
+    padding: 10px 10px 10px 10px;/*Espaciado entre el texto y el borde*/
+    margin-left:20px ;/*Espaciado exterior izquierda*/
+    margin-right: 20px;/*Espaciado exterior derecha*/
 
 }
 .textoAbout p{
-    font-size: 25px;
+    font-size: 25px;/*Tamaño del texto*/
 }
 .formulario{
     
-    border: 10px solid rgb(79, 125, 133);
-    border-radius: 40px;
-    display:flex;
+    border: 10px solid rgb(79, 125, 133);/*Borde*/
+    border-radius: 40px;/*Radio del borde */
+    display:flex;/**/
     flex-direction: column;
-    padding: 10px 10px 10px 10px;
-    margin-top: 30px;   
-    margin-right: 800px;
-    margin-left: 10px;
+    padding: 10px 10px 10px 10px;/*Espaciado entre el texto y el borde*/
+    margin-top: 30px;  /*Espaciado exterior arriba*/ 
+    margin-right: 800px;/*Espaciado exterior derecha*/
+    margin-left: 10px;/*Espaciado exterior izquierda*/
    
 }
 
@@ -149,12 +149,12 @@ body {
 }
 /*CSS ESPECIALMENTE PARA INFO.HTML*/
 .info{
- font-size: 25px;  
- border: 10px solid gray;
- border-radius: 50px;
- margin-right: 20px;
- margin-left: 20px;
- padding: 10px 10px 10px 10px;
+ font-size: 25px; /*Tamaño del texto*/
+ border: 10px solid gray;/*Borde*/
+ border-radius: 50px;/*radio del borde*/
+ margin-right: 20px;/*Espaciado derecho*/
+ margin-left: 20px;/*Espaciado izquierdo*/
+ padding: 10px 10px 10px 10px;/*Espacio entre el texto y el borde*/
 }
 /*PARA EL DISEÑO RESPONSIVE*/
 
@@ -168,123 +168,129 @@ body {
 }
 
 .prox{
-    text-align: center;
-    font-size: 40px;
+    text-align: center;/*Centra el texto*/
+    font-size: 40px;/*Tamaño del */
 }
+
 
 @media (max-width: 1024px) {
 
-    /* Home  */
     .Presentacion {
-        flex-direction: column; /* Coloca imagen y texto uno debajo del otro */
-        text-align: center;
-    }
-    #imagenAgua {
-        width: 80%; /* Más ancha en tablet */
-        max-width: 400px; /* Límite para que no sea enorme */
-        margin: 0 auto 20px auto; /* Centra y añade margen inferior */
-    }
-    .textoPresentacion p {
-        font-size: 16px;
+        flex-direction: column; /* Coloca la imagen y el texto uno debajo del otro (vertical) */
+        text-align: center; /* Centra el texto horizontalmente */
     }
 
-    /* About  */
+    #imagenAgua {
+        width: 80%; /* Hace que la imagen ocupe el 80% del ancho del contenedor */
+        max-width: 400px; /* Evita que crezca más de 400px */
+        margin: 0 auto 20px auto; /* Centra la imagen y deja un margen inferior */
+    }
+
+    .textoPresentacion p {
+        font-size: 16px; /* Reduce el tamaño del texto para mejor lectura en pantallas medianas */
+    }
+
     .contenedor-principal {
-        flex-direction: column; /* Coloca texto y formulario uno debajo del otro */
-        align-items: center;
+        flex-direction: column; /* Pone el texto y el formulario en columna (uno abajo del otro) */
+        align-items: center; /* Centra horizontalmente el contenido */
     }
 
     .formulario {
-        max-width: 600px; /* Permite que el formulario sea más ancho */
-        margin-top: 20px;
-        width: 90%;
+        max-width: 600px; /* Permite que el formulario sea más ancho sin exceder ese limite */
+        margin-top: 20px; /* Espacio superior */
+        width: 90%; /* 90% del ancho disponible */
     }
 }
 
-/*  Celular (max-width: 768px)  */
+
+/*celu*/
 @media (max-width: 768px) {
     
     .titulologo {
-        flex-direction: column; /* Coloca logo, título y menú en columna */
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Coloca logo, titulo y menu uno debajo del otro */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centra el texto */
     }
 
     .titulologo h1 {
-        font-size: 20px; /* Tamaño de título más pequeño */
-        margin: 10px 0;
+        font-size: 20px; /* Hace más chico el titulo */
+        margin: 10px 0; /* Añade espacio arriba y abajo del titulo */
     }
 
-    /* Ajustar la posición del menú para que no flote tan arriba */
     #menu {
-        top: 180px; /* Baja la posición del menú para que esté debajo de h1 */
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%); /* Centra el menú */
-        width: 80%;
+        top: 180px; /* Baja el menu debajo del titulo */
+        right: auto; /* Saca alineación a la derecha */
+        left: 50%; /* Lo centra horizontalmente */
+        transform: translateX(-50%); /* Centra el menu*/
+        width: 80%; /* Limita el ancho del menu */
     }
     
-    /* Home  */
     .Presentacion {
-        margin: 20px 10px; /* Menos margen lateral */
+        margin: 20px 10px; /* Reduce los margenes laterales */
     }
+
     #imagenAgua {
-        width: 90%;
-        max-width: 300px;
+        width: 90%; /* Imagen más ancha en celulares */
+        max-width: 300px; /* No supera los 300px */
     }
+
     .textoPresentacion p {
-        border-width: 3px; /* Borde más fino */
-        padding: 8px;
+        border-width: 3px; /* Bordes mas finos */
+        padding: 8px; /* Espaciado interno reducido */
     }
+
     .finalHome {
-        font-size: 20px;
-        margin-top: 40px;
+        font-size: 20px; /* Texto final mas pequeño */
+        margin-top: 40px; /* Espacio superior */
     }
 
-    /* About  */
     .textoAbout p {
-        font-size: 18px;
+        font-size: 18px; /* Texto un poco mas grande y legible */
     }
+
     .formulario {
-        width: 100%; /* Que ocupe todo el ancho disponible */
-        margin: 20px 0;
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 20px 0; /* Espaciado arriba y abajo */
     }
 
-    /* Info */
     .info {
-        font-size: 18px;
-        border-width: 5px;
-        border-radius: 20px;
-        margin: 20px 10px;
-        padding: 15px;
+        font-size: 18px; /* Texto más grande */
+        border-width: 5px; /* Borde más delgado */
+        border-radius: 20px; /* Esquinas redondeadas */
+        margin: 20px 10px; /* Espacio alrededor */
+        padding: 15px; /* Espaciado interno */
     }
 
-    /* Footer */
     .footer {
-        font-size: 14px;
-        padding: 15px 5px;
-        margin-top: 30px;
+        font-size: 14px; /* Texto más pequeño */
+        padding: 15px 5px; /* Menos espacio interno */
+        margin-top: 30px; /* Espacio superior */
     }
 }
 
-/* Ocultar el botón del menú en PC/Tablet cuando el ancho es suficiente */
+
+/*PC*/
 @media (min-width: 769px) {
+
     .navbar button {
-        display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+        display: none; /* Oculta el boton del menu en pantallas grandes */
     }
+
     #menu {
-        position: static; /* El menú vuelve a su flujo normal */
-        display: flex !important; /* Muestra el menú de forma horizontal */
-        background: none;
-        border: none;
+        position: static; /* El menu vuelve a su posición normal */
+        display: flex !important; /* Muestra el menu horizontalmente */
+        background: none; /* Sin fondo */
+        border: none; /* Sin borde */
         padding: 0;
-        margin-left: 20px; /* Espacio para separarlo del título */
+        margin-left: 20px; /* Separa el menu del titulo */
     }
+
     #menu li {
-        padding: 0 10px;
+        padding: 0 10px; /* Espacio entre los items del menu */
     }
+
     #menu li:hover {
-        background: none;
-        text-decoration: underline;
+        background: none; /* Sin fondo al pasar el mouse */
+        text-decoration: underline; /* Subraya el texto al pasar el mouse */
     }
 }
